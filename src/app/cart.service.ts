@@ -21,4 +21,11 @@ export class CartService {
     return this.items;
   }
 
+  removeFromCart(productId) {
+    if (productId > -1) {
+      this.items.splice(productId, 1);
+    }
+    return this.items;
+  }
+
 }

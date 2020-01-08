@@ -1,0 +1,6 @@
+<h3>Cart</h3>
+
+<div class="cart-item" *ngFor="let item of items; index as productId" (click)="removeFromCart(productId)">
+  <span>{{ item.name }}</span>
+  <span>{{ item.price | currency }}</span>
+</div>
